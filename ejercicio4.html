@@ -1,0 +1,19 @@
+<HTML>
+    <head>
+        <script languaje="Javascript">
+            var reloj = 0;
+            var frecuencia = 1000;
+            function actualiza() {
+                var ahora = new date();
+                var fecha =getDate() + " - " + (ahora.getMonth() + 1) + " - " + ahora.getFullYerar();
+                var ahora = ahora.getHours() + ":"  + ahora.getMinutes() + ":" + ahora.getSeconds();
+                var escribe = 'Hoy es ' + fecha + ' y son las ' + hora +' horas';
+                situa.innerHTML = escribe;
+                reloj = setTimeout("actualiza()", frecuencia);
+            }
+        </script>
+        <title>cronometro</title>
+    </head>
+    <body onload="actualiza()";>
+    </body>
+</HTML>
